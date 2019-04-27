@@ -8,16 +8,13 @@ end
 
 def input_to_index(input)  # converts a user_input to an integer -1
   input = input.to_i - 1
-  puts input
   return input
 end
 
 def valid_move?(board, index)
   if index.between?(0,8) && (board[index] == "" || board[index] == " ")
-    puts "true"
     return true
   else
-    puts "not true"
     return turn(board)
   end
 end
