@@ -24,5 +24,7 @@ def move(board, index, token = 'X')
   return board
 end
 
-def turn()
+def turn(board)
+  puts "What is your first move?"
+  input = gets.chomp
 end
