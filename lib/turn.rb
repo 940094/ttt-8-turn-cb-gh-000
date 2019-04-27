@@ -13,7 +13,7 @@ end
 
 def valid_move?(board, index)
   if index.between?(0,8) && (board[index] == "" || board[index] == " ")
-    return true
+    return move(board, index)
   else
     return turn(board)
   end
@@ -21,7 +21,7 @@ end
 
 def move(board, index, token = 'X')
   board[index] = token
-  return board
+  return display_board(board)
 end
 
 def turn(board)
