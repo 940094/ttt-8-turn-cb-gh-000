@@ -17,6 +17,7 @@ def valid_move?(board, index)
     puts "true"
     return true
   else
+    puts "not true"
     return turn(board)
   end
 end
