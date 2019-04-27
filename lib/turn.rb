@@ -7,8 +7,9 @@ def display_board(board)
 end
 
 def input_to_index(input)  # converts a user_input to an integer -1
-  input = input.to_i
-  return input -= 1
+  input = input.to_i -= 1
+  puts input
+  return input
 end
 
 def valid_move?(board, index)
