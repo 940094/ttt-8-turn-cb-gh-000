@@ -13,9 +13,9 @@ end
 
 def valid_move?(board, index)
   if index.between?(0,8) && (board[index] == "" || board[index] == " ")
-    return move(board, index)
+    return true  # move(board, index)
   else
-    return turn(board)
+    return false   # turn(board)
   end
 end
 
