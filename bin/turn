@@ -7,4 +7,3 @@ puts "Welcome to Tic Tac Toe"
 display_board(board)
 
 turn(board)
-valid_move?(board, input_to_index(input))
