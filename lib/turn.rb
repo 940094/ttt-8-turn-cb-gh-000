@@ -25,7 +25,7 @@ def move(board, index, token = 'X')
 end
 
 def turn(board)
-  puts "What is your first move?"
+  puts "Please enter 1-9:"
   input = gets.chomp
   return valid_move?(board, input_to_index(input))
 end
