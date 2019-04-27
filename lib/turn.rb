@@ -1,4 +1,4 @@
 def display_board(board)
-  puts " board[index] | board[index] | board[index] "
+  puts " #{board[0]} | #{board[0]} | #{board[0]} "
   puts "-----------"
 end
