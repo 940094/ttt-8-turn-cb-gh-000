@@ -7,8 +7,8 @@ def display_board(board)
 end
 
 def input_to_index(input)  # converts a user_input to an integer -1
-  input = input.to_i - 1
-  return input
+  index = input.to_i - 1
+  return index
 end
 
 def valid_move?(board, index)
@@ -27,9 +27,10 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.chomp
-  if valid_move?(board, input_to_index(input))
-    return move(board, input_to_index(input))
+  index = input_to_index(input)
+  if valid_move?(board, index)
+    return move(board, index)
   else
-    return valid_move?(board, input_to_index(input))
+    return valid_move?(board, index)
   end
 end
