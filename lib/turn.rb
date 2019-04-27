@@ -27,4 +27,5 @@ end
 def turn(board)
   puts "What is your first move?"
   input = gets.chomp
+  return valid_move?(board, input_to_index(input))
 end
