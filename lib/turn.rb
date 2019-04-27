@@ -31,4 +31,5 @@ def turn(board)
     return move(board, index)
   else
     return valid_move?(board, input_to_index(input))
+  end
 end
