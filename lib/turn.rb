@@ -14,7 +14,7 @@ def valid_move?(board, index)
   end
 end
 
-def move()
+def move(board, index, token = 'X')
 end
 
 def turn()
